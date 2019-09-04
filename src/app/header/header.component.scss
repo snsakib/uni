@@ -1,0 +1,42 @@
+.navbar-dark .navbar-nav .active > .nav-link {
+  color: orange;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: orange;
+}
+
+.navbar-brand {
+  font-size: 2.5rem;
+  color: orange;
+  font-style: oblique;
+
+  &:hover,
+  &:focus {
+    color: orange;
+  }
+}
+
+.navbar-toggler {
+  border: none;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.form-inline {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+
+  .form-control {
+    border-radius: 0.25rem 0 0 0.25rem;
+  }
+
+  .btn {
+    border-radius: 0 0.25rem 0.25rem 0;
+    border-left: 0;
+  }
+}

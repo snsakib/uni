@@ -1,0 +1,99 @@
+<section id="events" class="py-5">
+  <h2 class="text-center">Events</h2>
+  <div class="d-flex justify-content-center my-3">
+    <button class="btn btn-dark" #upcomingBtn (click)="showUpcomingEvents()">
+      Upcoming
+    </button>
+    <button class="btn btn-light" #ongoingBtn (click)="showOngoingEvents()">
+      Ongoing
+    </button>
+  </div>
+
+  <ng-container *ngIf="upcomingEvents; else ongoingEvents">
+    <div class="fadeIn">
+      <div
+        class="d-flex justify-content-around flex-column flex-md-row align-items-center"
+      >
+        <div class="card my-3" style="width: 18rem;">
+          <div class="events">
+            <h5>Event Name</h5>
+            <p class="date">1 Feb, 2019</p>
+            <button class="btn btn-outline-light mt-3">Get Ticket</button>
+          </div>
+          <img
+            class="card-img-top"
+            src="./assets/images/events/upcoming-events-1.jpg"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card my-3" style="width: 18rem;">
+          <div class="events">
+            <h5>Event Name</h5>
+            <p class="date">8 Feb, 2019</p>
+            <button class="btn btn-outline-light mt-3">Get Ticket</button>
+          </div>
+          <img
+            class="card-img-top"
+            src="./assets/images/events/upcoming-events-2.jpg"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card my-3" style="width: 18rem;">
+          <div class="events">
+            <h5>Event Name</h5>
+            <p class="date">12 Feb, 2019</p>
+            <button class="btn btn-outline-light mt-3">Get Ticket</button>
+          </div>
+          <img
+            class="card-img-top"
+            src="./assets/images/events/upcoming-events-3.jpg"
+            alt="Card image cap"
+          />
+        </div>
+      </div>
+    </div>
+  </ng-container>
+
+  <ng-template #ongoingEvents>
+    <div class="fadeIn">
+      <div
+        id="ongoing-events"
+        class="d-flex justify-content-around flex-column flex-md-row align-items-center"
+      >
+        <div class="card my-3" style="width: 18rem;">
+          <div class="events">
+            <h5>Event Name</h5>
+            <button class="btn btn-outline-light mt-3">Know More</button>
+          </div>
+          <img
+            class="card-img-top"
+            src="./assets/images/events/ongoing-events-1.jpg"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card my-3" style="width: 18rem;">
+          <div class="events">
+            <h5>Event Name</h5>
+            <button class="btn btn-outline-light mt-3">Know More</button>
+          </div>
+          <img
+            class="card-img-top"
+            src="./assets/images/events/ongoing-events-2.jpg"
+            alt="Card image cap"
+          />
+        </div>
+        <div class="card my-3" style="width: 18rem;">
+          <div class="events">
+            <h5>Event Name</h5>
+            <button class="btn btn-outline-light mt-3">Know More</button>
+          </div>
+          <img
+            class="card-img-top"
+            src="./assets/images/events/ongoing-events-3.jpg"
+            alt="Card image cap"
+          />
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</section>

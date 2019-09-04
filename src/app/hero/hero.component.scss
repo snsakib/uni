@@ -1,0 +1,38 @@
+.highlight {
+  color: orange;
+  font-style: oblique;
+}
+
+.carousel-caption {
+  h5 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 1;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba($color: #000000, $alpha: 0.4);
+}
+
+.carousel-caption a {
+  color: orange;
+  text-decoration: none;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  padding: 5px 10px;
+  -webkit-transition: color 0.5s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: rgba($color: #000000, $alpha: 0.8);
+  }
+}

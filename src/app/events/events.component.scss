@@ -1,0 +1,46 @@
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: orange;
+}
+
+.card {
+  position: relative;
+
+  .events {
+
+    h5 {
+      color: white;
+      font-size: 1.5rem;
+    }
+
+    .date {
+      color: white;
+    }
+
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn .5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    display: block;
+  }
+  1% {
+    opacity: 0;
+    display: block;
+  }
+  100% {
+    opacity: 1;
+    display: block;
+  }
+}
