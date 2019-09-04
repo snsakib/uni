@@ -12,8 +12,8 @@ import {
   styleUrls: ['./events.component.scss']
 })
 export class EventsComponent implements OnInit {
-  @ViewChild('upcomingBtn') upcomingBtn: ElementRef;
-  @ViewChild('ongoingBtn') ongoingBtn: ElementRef;
+  @ViewChild('upcomingBtn', {static: false}) upcomingBtn: ElementRef;
+  @ViewChild('ongoingBtn', {static: false}) ongoingBtn: ElementRef;
   upcomingEvents = true;
 
   showUpcomingEvents() {
